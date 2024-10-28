@@ -13,58 +13,43 @@ function myCallbackFunction() {
 
 }
 map.on('load',function(){
-    map.addSource('analysis',{
+    map.addSource('tompkinscounty',{
         'type':'vector',
-        'url': 'mapbox://synnpower.88f0sghi' 
+        'url': 'mapbox://synngatech.6weab6u5' 
     });
-    map.addSource('centerstatus',{
+    map.addSource('newyorkstate',{
         'type':'vector',
-        'url': 'mapbox://synnpower.79i2qddg' 
-    });
-    map.addSource('isochroneanalysis',{
-        'type':'vector',
-        'url': 'mapbox://synnpower.cggkx47r' 
-    });
-    map.addSource('newcoolingcenter',{
-        'type':'vector',
-        'url': 'mapbox://synnpower.51f3uyf6' 
-    });    
-    map.addSource('seoulboundary',{
-        'type':'vector',
-        'url': 'synnpower.5zp8jmom' 
-    });
-    map.addSource('newisochrone',{
-        'type':'vector',
-        'url': 'mapbox://synnpower.9flzhd6j' 
-    });
-    map.addSource('top5',{
-        'type':'vector',
-        'url': 'mapbox://synnpower.1o8sszye' 
-    });
-    map.addSource('expenditure',{
-        'type':'vector',
-        'url': 'mapbox://synnpower.28rfl3af' 
+        'url': 'mapbox://synngatech.7mlrd95f' 
     });
     
 
     map.addLayer({
-        'id':'capacity',
-        'type':'fill',
-        'source':'analysis',
-        'source-layer':'analysis-coolingcenter',
+        'id':'tompkins',
+        'type':'line',
+        'source':'tompkinscounty',
+        'source-layer':'TompkinsCounty-7waxkv',
         'paint':{
-            'fill-color': ['step',
-                            ['to-number', ['get', 'analysis_CapacityRate']],
-                            'white',
-                            0.14, '#290000',
-                            0.31, '#420505', 
-                            0.42, '#661414',
-                            0.54, '#872727',
-                            0.78, '#c76565',  
-                            0.91, '#f0adad',
-                            1, '#f7eded', 
-                        ],
-            'fill-opacity': 0.3,
+            'line-color': '#000000',
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                5, 2,
+                10, 1
+                ],
+        }
+    });
+
+    map.addLayer({
+        'id':'newyork',
+        'type':'line',
+        'source':'newyorkstate',
+        'source-layer':'Newyork-7uhnx7',
+        'paint':{
+            'line-color': '#000000',
+            'line-width': [
+                'interpolate', ['linear'], ['zoom'],
+                5, 2,
+                10, 1
+                ],
         }
     });
 

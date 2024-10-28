@@ -1,13 +1,13 @@
 var config = {
-    style:  'mapbox://styles/synnpower/clox1otla00i501qd628e5bvk',
-    accessToken: 'pk.eyJ1Ijoic3lubnBvd2VyIiwiYSI6ImNsbHBtOWE1MjA2bDYzaW5yY2tzeWZ6cW0ifQ.kteK0IjXELUFn9HM9qnmHQ',
+    style:  'mapbox://styles/synngatech/cm2tit89i00ix01qi8cq205c3',
+    accessToken: 'pk.eyJ1Ijoic3lubmdhdGVjaCIsImEiOiJjbTF4dGF1cTkwdnZ1MmtxMWRwNDgwazVpIn0.aoTqmmjvf-wJDx-0zbBq5A',
     showMarkers: false,
     markerColor: '#3FB1CE',
     inset: false,
     use3dTerrain: false,
     theme: 'light',
-    introtitle: 'Ithaca; A city which every want to leave',
-    title: 'Grey Ithaca',
+    introtitle: '2024 Fall Community Dynamics and Engagement \n Neighborhood Case Study \n Georgia Institute of Technology',
+    title: 'Grey Ithaca Downtown',
     subtitle: "History of Ithaca Downtown \n and Problems.",
     author: "October 2024 \n SungHo Synn",
     byline: 'Introduction',
@@ -20,8 +20,7 @@ var config = {
             id: '1st-chapter',
             alignment: 'center',
             hidden: false,
-            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/seoulheat.jpg?raw=true',
-            description: 'The extreme heatwaves in South Korea were officially reclassified as a natural disaster via an amendment to the Disaster and Safety Management Basic Act on September 18, 2018 (Bae, Kim, and Lee 2020).  Among the susceptible demographic segments in South Korea, the elderly population aged 65 and above emerges as particularly vulnerable to heatwaves (Song 2013). In the year 2022, heat-related illness reports in South Korea revealed that 37.4% (585 individuals) of cases were in the age group of 60 or above, with Seoul recording 7% (110 individuals) of heat-related illness instances (Park et al. 2023).',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle1.jpg?raw=true',
             location: {
                 center: [-76.4967, 42.43962],
                 zoom: 13,
@@ -37,11 +36,11 @@ var config = {
                 document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 0},
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
-                {layer: 'seoul', opacity: 1},
+                {layer: 'seoul', opacity: 0},
                 {layer: 'newcenter', opacity: 0},
                 {layer: 'topfive', opacity: 0},
                 {layer: 'newwalking', opacity: 0},
@@ -54,8 +53,8 @@ var config = {
                 {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 0},
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
@@ -73,14 +72,14 @@ var config = {
         },
         {
             id: '2nd-chapter',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
-            title: 'What is the cooling center?',
+            title: 'Where is Ithaca?',
             image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter.jpg?raw=true',
-            description: 'Since 2018, a notable strategy employed to mitigate the impact of extreme heatwaves, which are categorized as natural disasters, entails the establishment of Cooling Centers. These facilities are delineated as designated locales instituted to provide shelter and support to populations susceptible to the adverse effects of severe heatwaves, including the elderly, individuals with restricted mobility, or those with underlying health vulnerabilities.',
+            description: 'The City of Ithaca, where downtown Ithaca is located, originated as a small commercial hub at the southern tip of Cayuga Lake in Upstate New York.',
             location: {
-                center: [-76.4967, 42.43962],
-                zoom: 13,
+                center: [-79.4967, 42.43962],
+                zoom: 6,
                 pitch: 0,
                 bearing: 0
             },
@@ -93,8 +92,8 @@ var config = {
                 document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 0},
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
@@ -110,8 +109,8 @@ var config = {
                 {layer: 'expenditureforelder', opacity: 0},
             ],
             onChapterExit: [
-                {layer: 'capacity', opacity: 0},
-                {layer: 'status', opacity: 1},
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
                 {layer: 'seoul', opacity: 1},
@@ -131,12 +130,12 @@ var config = {
             id: '3rd-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Current Cooling Center Status in Seoul',
+            title: 'Tompkins County',
             image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/FacilityCategories.jpg?raw=true',
-            description: 'As of the reference date of November 27, 2023, the municipality of Seoul, South Korea, hosted a cumulative count of 4,028 officially designated Cooling Centers. Of this aggregate, 3,162 establishments held the status of Senior Community Centers, while an additional 423 entities were categorized under the designation of Community Service Centers. ',
+            description: '그중에서도 Tompkins County',
             location: {
-                center: [-76.4967, 42.43962],
-                zoom: 13,
+                center: [-76.75602, 42.45068],
+                zoom: 10,
                 pitch: 0,
                 bearing: 0
             },
@@ -149,7 +148,7 @@ var config = {
                 document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
-                {layer: 'capacity', opacity: 0},
+                {layer: 'tompkins', opacity: 1},
                 {layer: 'status', opacity: 1},
                 {layer: 'walking', opacity: 0},
                 {layer: 'dongline', opacity: 0},
@@ -187,17 +186,17 @@ var config = {
             id: '4th-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Insufficiency of Cooling Center capacity',
+            title: 'Downtown Ithaca',
             image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter2.jpg?raw=true',
-            description: 'The data underscores the insufficiency of Cooling Center capacity in relation to the vulnerable elderly population in numerous geographical zones. In particular, it is noteworthy that a total of 69 administrative districts, constituting 16% of the overall administrative districts, exhibited a ratio of vulnerable elderly population to total capacity that fell at or below 50%. ',
+            description: 'Downtown은 그 중에서도 Ithaca의 중심지입니다.',
             location: {
-                center: [-76.4967, 42.43962],
-                zoom: 20,
-                pitch: 0,
-                bearing: 0
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback:() => {
                 document.getElementById("capacity_legend").style.visibility = "visible";
                 document.getElementById("ac_legend").style.visibility = "hidden";
@@ -243,14 +242,14 @@ var config = {
             id: '5th-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Number of Individuals Sharing One Air Conditioner',
-            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/1_%EB%8C%80%EC%A7%80%201%20%EC%82%AC%EB%B3%B8%202.jpg?raw=true',
-            description: 'In 30 districts (equivalent to 7% of the sample), more than 46 elderly individuals were compelled to jointly utilize a solitary air conditioning unit. Although precise technical specifications regarding each air conditioner remain elusive, it is discernible that numerous districts grapple with limited accessibility to air conditioning facilities for individuals in need within the context of Cooling Centers.',
+            title: 'History of Ithaca ',
+            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter2.jpg?raw=true',
+            description: 'Downtown은 그 중에서도 Ithaca의 중심지입니다.',
             location: {
-                center: [-76.4967, 42.43962],
-                zoom: 20,
-                pitch: 0,
-                bearing: 0
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
