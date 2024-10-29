@@ -305,9 +305,94 @@ var config = {
             id: '10th-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Informal Institutions and Everyday Practices',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cornell.jpg?raw=true',
+            title: 'Informal Institutions and \n Everyday Practices',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
             description: 'Cornell University students are a major driving force in Downtown Ithaca’s economy. They reside in apartments within and around downtown and spend most of their leisure time in the Ithaca Commons. Students typically head to campus before 11 a.m., return to the Commons around 4 p.m. for social activities, and frequent downtown restaurants. Although less common, they also occasionally visit local clubs, bars, or the small movie theater in the Commons.',
+            location: {
+                center: [-76.48477, 42.44820],
+                zoom: 16.04,
+                pitch: 56.50,
+                bearing: -33.60,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '11th-chapter',
+            alignment: 'center',
+            hidden: false,
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle3.jpg?raw=true',
+            location: {
+                center: [-76.48477, 42.44820],
+                zoom: 16.04,
+                pitch: 56.50,
+                bearing: -33.60,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '12nd-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Urban Revitalization',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
+            description: 'Downtown Ithaca faced severe challenges during the COVID-19 pandemic. As more than 40% of the citys population—primarily students—shifted to remote learning and tourists stopped visiting, the service industry-focused downtown economy rapidly collapsed. This crisis prompted both the Ithaca City Government and the local community to recognize the need for economic diversification.',
+            location: {
+                center: [-76.48477, 42.44820],
+                zoom: 16.04,
+                pitch: 56.50,
+                bearing: -33.60,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '13rd-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Urban Revitalization',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
+            description: 'The City of Ithaca is currently striving to secure funding from the New York State Downtown Revitalization Initiative (DRI) to expand the downtown area and promote new industries. ("City of Ithaca Seeks Input," 2024) However, after seven unsuccessful attempts to secure funding, it is evident that Ithaca must also explore self-reliant solutions to revitalize its downtown.',
             location: {
                 center: [-76.48477, 42.44820],
                 zoom: 16.04,
