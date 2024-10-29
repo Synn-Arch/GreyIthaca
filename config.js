@@ -30,7 +30,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -38,10 +38,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
                 {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},       
+                {layer: 'demographic', opacity: 0},
             ],     
         },
         {
@@ -60,7 +62,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -68,10 +70,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],      
         },
         {
@@ -90,7 +94,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -98,10 +102,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],     
         },
         {
@@ -120,7 +126,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "visible";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -128,10 +134,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],     
         },
         {
@@ -149,7 +157,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -157,10 +165,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],     
         },
         {
@@ -179,7 +189,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -187,10 +197,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],        
         },
         {
@@ -209,7 +221,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "true";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -217,10 +229,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 1},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
                 {layer: 'newyork', opacity: 1},
+                {layer: 'demographic', opacity: 0},
             ],        
         },
         {
@@ -237,7 +251,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -245,10 +259,12 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
                 {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
                 {layer: 'tompkins', opacity: 1},
-                {layer: 'newyork', opacity: 1},       
+                {layer: 'newyork', opacity: 1},      
+                {layer: 'demographic', opacity: 0}, 
             ],     
         },
         {
@@ -256,7 +272,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Public Institution of Ithaca Downtown',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cityofithaca.jpeg?raw=true',
             description: 'City of Ithaca Government is responsible for the administrative management and public urban development of Downtown Ithaca, the City of Ithaca Government is currently striving to secure support from the New York State Downtown Revitalization Initiative (DRI), which focuses on diversifying Downtown Ithaca’s economy.',
             location: {
                 center: [-76.5237, 42.43962],
@@ -267,7 +283,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
-                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("demographic_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
                 document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
@@ -275,10 +291,44 @@ var config = {
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
                 {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
             ],
             onChapterExit: [
-                {layer: 'tompkins', opacity: 1},
-                {layer: 'newyork', opacity: 1},       
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0}, 
+                {layer: 'demographic', opacity: 0},     
+            ],     
+        },
+        {
+            id: '9th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Private Institution of Ithaca Downtown',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cornell.jpg?raw=true',
+            description: 'Cornell University is established in 1868, Cornell University is a private institution providing high-quality education to numerous outstanding students, significantly influencing Ithaca’s economy. Despite owning 47% of the city’s real estate value, the university contributes little in taxes due to its status as an educational institution, complicating the city’s efforts to fund public development. ("The History and Future," 2024) However, Cornell has the potential to offer valuable guidance and research on Ithaca’s urban development through its academic resources and has already engaged in related studies focused on the city.',
+            location: {
+                center: [-76.5237, 42.43962],
+                zoom: 13,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
             ],     
         },
     ]

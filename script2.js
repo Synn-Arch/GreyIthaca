@@ -21,7 +21,11 @@ map.on('load',function(){
         'type':'vector',
         'url': 'mapbox://synngatech.7mlrd95f' 
     });
-    
+    map.addSource('demographic',{
+        'type':'vector',
+        'url': 'mapbox://synngatech.5du18l8s' 
+    });
+        
 
     map.addLayer({
         'id':'tompkins',
@@ -54,22 +58,19 @@ map.on('load',function(){
     });
 
     map.addLayer({
-        'id':'acrate',
+        'id':'demographic',
         'type':'fill',
-        'source':'analysis',
-        'source-layer':'analysis-coolingcenter',
+        'source':'demographic',
+        'source-layer':'ithaca_demographic-7ob19d',
         'paint':{
             'fill-color': ['step',
-                            ['to-number', ['get', 'analysis_AcRate']],
+                            ['to-number', ['get', 'under_30_percentage']],
                             'white',
-                            8, '#ebfbff',
-                            15, '#cce9f0', 
-                            23, '#a3c8d1',
-                            33, '#88b2bd',
-                            46, '#6c98a3',  
-                            64, '#578691',
-                            100, '#396670', 
-                            190, '#18363d', 
+                            8, '#290000',
+                            22, '#420505', 
+                            30, '#661414',
+                            50, '#872727',
+                            100, '#c76565',
                         ],
             'fill-opacity': 0.3,
         }

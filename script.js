@@ -47,17 +47,16 @@ function setLayerOpacity(layer) {
     }
 }
 
-
 var story = document.getElementById('story');
 var features = document.createElement('div');
 features.setAttribute('id', 'features');
 
 var header = document.createElement('div');
 
-if (config.introtitle) {
-    var introtitleText = document.createElement('h3');
-    introtitleText.innerText = config.introtitle;
-    header.appendChild(introtitleText);
+if (config.kortitle) {
+    var kortitleText = document.createElement('h3');
+    kortitleText.innerText = config.kortitle;
+    header.appendChild(kortitleText);
 }
 
 if (config.title) {
