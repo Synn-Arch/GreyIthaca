@@ -508,8 +508,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Public Safety',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Homeless_Video.mp4?raw=true',
-            description: 'The issue of homelessness in Ithaca presents some unique characteristics. Despite being a small rural town, Ithaca hosts a significant number of homeless individuals who live in tents in the forests on the eastern and western outskirts of the city. During the day and evening, they come down to the downtown area, where they often smoke marijuana, beg for money, and occasionally get into altercations with passersby. In the early hours of the morning, they tend to return to the woods. The City of Ithaca government is aware of this issue and is attempting to address it by expanding shelters and welfare facilities to discourage them from coming into the downtown area.',
+            video: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Homeless_Video.mp4?raw=true',
+            description: 'The issue of homelessness goes beyond merely addressing physical safety concerns. The City of Ithaca recently conducted a cleanup at a former homeless encampment near Six Mile Creek. This initiative involved removing debris that could potentially harm the environment after the homeless individuals had relocated. This action highlights that addressing homelessness also serves as a step towards reducing the risk of potential environmental pollution.(WENY TV News, 2024)',
             location: {
                 center: [-76.45468, 42.43575],
                 zoom: 15.96,

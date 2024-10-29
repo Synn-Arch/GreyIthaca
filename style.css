@@ -201,9 +201,9 @@ a, a:hover, a:visited {
 }
 
 video {
-    margin-left: 45vw;
-    width:32%;
-    transform: translate(-50%);
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .legend {
