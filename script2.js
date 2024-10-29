@@ -21,7 +21,7 @@ map.on('load',function(){
         'type':'vector',
         'url': 'mapbox://synngatech.7mlrd95f' 
     });
-    map.addSource('demographic',{
+    map.addSource('ithacademographic',{
         'type':'vector',
         'url': 'mapbox://synngatech.5du18l8s' 
     });
@@ -60,17 +60,17 @@ map.on('load',function(){
     map.addLayer({
         'id':'demographic',
         'type':'fill',
-        'source':'demographic',
+        'source':'ithacademographic',
         'source-layer':'ithaca_demographic-7ob19d',
         'paint':{
             'fill-color': ['step',
                             ['to-number', ['get', 'under_30_percentage']],
                             'white',
-                            8, '#290000',
-                            22, '#420505', 
-                            30, '#661414',
-                            50, '#872727',
-                            100, '#c76565',
+                            0, '#290000',
+                            8, '#420505', 
+                            22, '#661414',
+                            30, '#872727',
+                            50, '#c76565',
                         ],
             'fill-opacity': 0.3,
         }

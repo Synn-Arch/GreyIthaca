@@ -31,9 +31,6 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
@@ -63,9 +60,6 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -95,9 +89,6 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -127,9 +118,6 @@ var config = {
             rotateAnimation: true,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -158,9 +146,6 @@ var config = {
             rotateAnimation: true,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -190,9 +175,6 @@ var config = {
             rotateAnimation: true,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -210,8 +192,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Demographic Status of Ithaca Downtown',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview1.jpg?raw=true',
-            description: 'Downtown Ithaca, true to its original purpose, still serves as a space for leisure activities for many students and residents. However, the economic downturn over time, coupled with the recent recession caused by the COVID-19 pandemic, has led to many vacant storefronts, casting a shadow over the economic future of Downtown Ithaca.',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/AgeDistribution.jpg?raw=true',
+            description: 'This graph illustrates the age distribution of Ithaca Downtown. According to the data, people in their 40s and 50s represent the largest population groups, while younger age groups, particularly those in their teens and 20s, are significantly underrepresented. This trend suggests that the high cost of living, including expensive rent, is deterring younger people from moving into the Downtown area. Consequently, the area is gradually aging, with a demographic shift toward older populations that tend to have lower levels of economic activity. This trend implies a potential decline for Downtown in the long term, as it fails to attract the younger generation essential for vibrant economic growth.',
             location: {
                 center: [-76.51128, 42.43947],
                 zoom: 13.94,
@@ -222,9 +204,6 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "true";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 1},
@@ -252,9 +231,6 @@ var config = {
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
@@ -275,18 +251,15 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cityofithaca.jpeg?raw=true',
             description: 'City of Ithaca Government is responsible for the administrative management and public urban development of Downtown Ithaca, the City of Ithaca Government is currently striving to secure support from the New York State Downtown Revitalization Initiative (DRI), which focuses on diversifying Downtown Ithaca’s economy.',
             location: {
-                center: [-76.5237, 42.43962],
-                zoom: 13,
-                pitch: 0,
-                bearing: 0
+                center: [-76.49908, 42.43889],
+                zoom: 18.83,
+                pitch: 56.50,
+                bearing: -33.60
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
@@ -307,18 +280,44 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cornell.jpg?raw=true',
             description: 'Cornell University is established in 1868, Cornell University is a private institution providing high-quality education to numerous outstanding students, significantly influencing Ithaca’s economy. Despite owning 47% of the city’s real estate value, the university contributes little in taxes due to its status as an educational institution, complicating the city’s efforts to fund public development. ("The History and Future," 2024) However, Cornell has the potential to offer valuable guidance and research on Ithaca’s urban development through its academic resources and has already engaged in related studies focused on the city.',
             location: {
-                center: [-76.5237, 42.43962],
-                zoom: 13,
-                pitch: 0,
-                bearing: 0
+                center: [-76.48477, 42.44820],
+                zoom: 16.04,
+                pitch: 56.50,
+                bearing: -33.60,
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback:() => {
                 document.getElementById("demographic_legend").style.visibility = "hidden";
-                document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "hidden";
-                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '10th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Informal Institutions and Everyday Practices',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/cornell.jpg?raw=true',
+            description: 'Cornell University students are a major driving force in Downtown Ithaca’s economy. They reside in apartments within and around downtown and spend most of their leisure time in the Ithaca Commons. Students typically head to campus before 11 a.m., return to the Commons around 4 p.m. for social activities, and frequent downtown restaurants. Although less common, they also occasionally visit local clubs, bars, or the small movie theater in the Commons.',
+            location: {
+                center: [-76.48477, 42.44820],
+                zoom: 16.04,
+                pitch: 56.50,
+                bearing: -33.60,
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
                 {layer: 'tompkins', opacity: 0},
