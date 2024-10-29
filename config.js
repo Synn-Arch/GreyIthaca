@@ -307,7 +307,7 @@ var config = {
             hidden: false,
             title: 'Informal Institutions and \n Everyday Practices',
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
-            description: 'Cornell University students are a major driving force in Downtown Ithaca’s economy. They reside in apartments within and around downtown and spend most of their leisure time in the Ithaca Commons. Students typically head to campus before 11 a.m., return to the Commons around 4 p.m. for social activities, and frequent downtown restaurants. Although less common, they also occasionally visit local clubs, bars, or the small movie theater in the Commons.',
+            description: 'Cornell University students are a major driving force in Downtown Ithacas economy. They reside in apartments within and around downtown and spend most of their leisure time in the Ithaca Commons. Students typically head to campus before 11 a.m., return to the Commons around 4 p.m. for social activities, and frequent downtown restaurants. Although less common, they also occasionally visit local clubs, bars, or the small movie theater in the Commons.',
             location: {
                 center: [-76.48477, 42.44820],
                 zoom: 16.04,
@@ -336,10 +336,10 @@ var config = {
             hidden: false,
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle3.jpg?raw=true',
             location: {
-                center: [-76.48477, 42.44820],
-                zoom: 16.04,
-                pitch: 56.50,
-                bearing: -33.60,
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -362,13 +362,13 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Urban Revitalization',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
-            description: 'Downtown Ithaca faced severe challenges during the COVID-19 pandemic. As more than 40% of the citys population—primarily students—shifted to remote learning and tourists stopped visiting, the service industry-focused downtown economy rapidly collapsed. This crisis prompted both the Ithaca City Government and the local community to recognize the need for economic diversification.',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacavacantstore.png?raw=true',
+            description: 'Downtown Ithaca faced severe challenges during the COVID-19 pandemic. As more than 40% of the citys population—primarily students—shifted to remote learning and tourists stopped visiting, the service industry-focused downtown economy rapidly collapsed. This crisis prompted both the Ithaca City Government and the local community to recognize the need for economic diversification. ',
             location: {
-                center: [-76.48477, 42.44820],
-                zoom: 16.04,
-                pitch: 56.50,
-                bearing: -33.60,
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -391,13 +391,129 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Urban Revitalization',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Ithacanight.png?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/seekincentives.png?raw=true',
             description: 'The City of Ithaca is currently striving to secure funding from the New York State Downtown Revitalization Initiative (DRI) to expand the downtown area and promote new industries. ("City of Ithaca Seeks Input," 2024) However, after seven unsuccessful attempts to secure funding, it is evident that Ithaca must also explore self-reliant solutions to revitalize its downtown.',
             location: {
-                center: [-76.48477, 42.44820],
-                zoom: 16.04,
-                pitch: 56.50,
-                bearing: -33.60,
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '14th-chapter',
+            alignment: 'center',
+            hidden: false,
+            title: 'Urban Revitalization',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            description: 'Student reactions to this initiative have been mostly negative. Marcos noted that without fundamental changes to the industrial structure, simply providing incentives to small businesses and promoting tourist attractions will not address the root issues in Ithaca. \n \n In fact, Ithaca suffers from a significant lack of foundational industries. Unlike its historical reliance on dairy and agriculture, the growth of new service industries has been slow. This is despite the presence of Cornell University, which could serve as a catalyst for new industries. Contributing factors include the absence of large cities nearby, a fundamental shortage of jobs, and a lack of motivation for New York State to actively pursue economic development in such a small town.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '15th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '16th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '17th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
