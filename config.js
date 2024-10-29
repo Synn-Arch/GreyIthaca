@@ -504,6 +504,35 @@ var config = {
             ],     
         },
         {
+            id: '16-1th-chapter',
+            alignment: 'center',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Homeless_Video.mp4?raw=true',
+            description: 'The issue of homelessness in Ithaca presents some unique characteristics. Despite being a small rural town, Ithaca hosts a significant number of homeless individuals who live in tents in the forests on the eastern and western outskirts of the city. During the day and evening, they come down to the downtown area, where they often smoke marijuana, beg for money, and occasionally get into altercations with passersby. In the early hours of the morning, they tend to return to the woods. The City of Ithaca government is aware of this issue and is attempting to address it by expanding shelters and welfare facilities to discourage them from coming into the downtown area.',
+            location: {
+                center: [-76.45468, 42.43575],
+                zoom: 15.96,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
             id: '17th-chapter',
             alignment: 'center',
             hidden: false,
