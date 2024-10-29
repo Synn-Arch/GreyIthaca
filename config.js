@@ -11,9 +11,9 @@ var config = {
     subtitle: "History of Ithaca Downtown \n and Problems.",
     author: "October 2024 \n SungHo Synn",
     byline: 'Introduction',
-    para1: 'This research delves into the examination and analysis of Cooling Centers, vital welfare facilities catering to the needs of vulnerable elderly populations confronting extreme summer climate conditions in Seoul, South Korea. The primary objective of this study was to evaluate the effectiveness of Cooling Centers in each administrative district, with a focus on their capacities to meet the rising demand. By doing so, this research aims to contribute valuable insights to the provision of welfare services in appropriate locations.',
-    para2: 'The analysis revealed that several administrative districts in Seoul struggled to secure Cooling Centers with capacities matching the elderly vulnerable population. Additionally, the availability of overnight accommodations in these facilities was generally limited across the city. These findings emphasize the urgent need for solutions to assist elderly vulnerable populations in coping with prolonged tropical heat in Seoul. Furthermore, the research highlights that Cooling Centers should consider other vulnerable groups in addition to the elderly in their services.',
-    footer: 'Source: Bae, Min-Ki, Bo-Eun Kim, and Chae-Yeon Lee. 2020. “Analysis on the Spatial Relationship between the Residential Area of the Vulnerable Groups and the Hazardous Area during the Heat Wave.” Journal of Environmental Policy and Administration 28 (3): 243~80. \n Hyunmi, Kang, and Park Sohyun. 2007. “Characteristics of Walking Environment in Apartment Complexes on Gradient Sites.” Architecutre & Urban Research Information Center, November. \n Jenerette, G. Darrel, Sharon L. Harlan, William L. Stefanov, and Chris A. Martin. 2011. “Ecosystem Services and Urban Heat Riskscape Moderation: Water, Green Spaces, and Social Inequality in Phoenix, USA.” Ecological Applications: A Publication of the Ecological Society of America 21 (7): 2637~51. \n Jung, Sangyun, and Dong-Wook Sohn. 2019. “An Evaluation of Pedestrian Environments based on the Criteria of Universal Design Theory - A case study of old town area in Seoul -.” Journal of the architectural institute of Korea planning & design 35 (1): 117~25. \n Kim, Jin-Wook. 2008. “A Study on the Cooling Center Manual of Facility and Maintenance for Extreme Heat Disaster.” Journal of the Korean Society of Hazard Mitigation 8 (4): 17~22. \n Lee, Min. 2022. Establishing Guideline for Elderly Peoples Healthy Life. National Evidence-based Healthcare Collaborating Agency. \n Park, Seongwoo, Joo-Yeon Hwang, Hyoeun Kim, Youngju Lee, JongHee Kim, and Younjhin Ahn. 2023. “Results of the 2022 Heat-Related Illness Surveillance.” Public Health Weekly Report 16 (Issue: 9): Pages: 241-252. \n Son, Ho-Hee, and Eun-Jung Kim. 2013. “Analysis of Spatio-Temporal Parameters of Gait in Elderly by Various Walking Pathways Width.” The Journal of the Korea Contents Association 13 (10): 444~51. \n Song, Gowook. 2013. “Emergency Measures for Vulnerable Populations to Heatwaves.” Busan Development Institute, no. BDI Focus (June). \n Yoon, Yongseon, Sanggweon Lee, and Hwenghwan Ahn. 2016. “A long-term counterproposal of Heat wave damage measures for climate change.” Journal of disaster prevention v.18 no.5, pp.12-35. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    para1: 'The Downtown area of Ithaca, located at the southern tip of Cayuga Lake in Upstate New York, has evolved from a modest commercial hub in the early 1800s to a significant center of economic and cultural activity. Since Ithaca became the county seat of Tompkins County in 1817, its growth has been closely tied to key institutions, notably Cornell University, established in 1868. Over the years, Downtown Ithaca has been a major source of tax revenue and commercial services. However, shifts in transportation and industrial developments in the mid-20th century sparked a migration away from the city, leading to a decline that the city sought to address through revitalization initiatives, including the construction of the pedestrian-only Ithaca Commons in 1974 and its redesign in 2015.',
+    para2: 'Today, Downtown Ithaca faces contemporary challenges and opportunities, such as the need for urban revitalization and improvements in public safety. This study investigates the perspectives of various stakeholders—city officials, Cornell University, local merchants, and students—on these pressing issues. By examining their views on economic diversification, public safety concerns, and community engagement, this report aims to shed light on the potential pathways for Ithaca’s future growth and development.',
+    footer: '',
     
     chapters: [
         {
@@ -139,7 +139,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Chronology of Ithaca Downtown',
-            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/coolingCenter2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Chronology.jpg?raw=true',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,
@@ -168,20 +168,20 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Vibrant Atmosphere has been faded',
-            image: 'https://github.com/Synn-Arch/Seoul-is-too-hot/blob/main/images/SleepingCoolingCenter.jpeg?raw=true',
-            description: 'A total of 164 administrative districts (comprising 38% of the sample) failed to secure any Cooling Centers with lodging capabilities, while 354 administrative districts (constituting 83% of the sample) exhibited accommodation capacities that fell below 50% concerning the elderly population.',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview1.jpg?raw=true',
+            description: 'Downtown Ithaca, true to its original purpose, still serves as a space for leisure activities for many students and residents. However, the economic downturn over time, coupled with the recent recession caused by the COVID-19 pandemic, has led to many vacant storefronts, casting a shadow over the economic future of Downtown Ithaca.',
             location: {
-                center: [-76.4967, 42.43962],
-                zoom: 20,
-                pitch: 0,
-                bearing: 0
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: false,
+            rotateAnimation: true,
             callback:() => {
                 document.getElementById("capacity_legend").style.visibility = "hidden";
                 document.getElementById("ac_legend").style.visibility = "hidden";
-                document.getElementById("accomo_legend").style.visibility = "visible";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
                 document.getElementById("walking_legend").style.visibility = "hidden";
             },
             onChapterEnter: [
@@ -193,7 +193,93 @@ var config = {
                 {layer: 'newyork', opacity: 1},
             ],        
         },
-
-        
+        {
+            id: '7th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Demographic Status of Ithaca Downtown',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview1.jpg?raw=true',
+            description: 'Downtown Ithaca, true to its original purpose, still serves as a space for leisure activities for many students and residents. However, the economic downturn over time, coupled with the recent recession caused by the COVID-19 pandemic, has led to many vacant storefronts, casting a shadow over the economic future of Downtown Ithaca.',
+            location: {
+                center: [-76.51128, 42.43947],
+                zoom: 13.94,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},
+            ],        
+        },
+        {
+            id: '7th-chapter',
+            alignment: 'center',
+            hidden: false,
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle2.jpg?raw=true',
+            location: {
+                center: [-76.4967, 42.43962],
+                zoom: 13,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},       
+            ],     
+        },
+        {
+            id: '8th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Public Institution of Ithaca Downtown',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ChaptersTitle2.jpg?raw=true',
+            description: 'City of Ithaca Government is responsible for the administrative management and public urban development of Downtown Ithaca, the City of Ithaca Government is currently striving to secure support from the New York State Downtown Revitalization Initiative (DRI), which focuses on diversifying Downtown Ithaca’s economy.',
+            location: {
+                center: [-76.5237, 42.43962],
+                zoom: 13,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback:() => {
+                document.getElementById("capacity_legend").style.visibility = "hidden";
+                document.getElementById("ac_legend").style.visibility = "hidden";
+                document.getElementById("accomo_legend").style.visibility = "hidden";
+                document.getElementById("walking_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 1},
+                {layer: 'newyork', opacity: 1},       
+            ],     
+        },
     ]
 };
