@@ -453,8 +453,8 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacacrime.png?raw=true',
             description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
             location: {
-                center: [-76.49942, 42.43908],
-                zoom: 16.09,
+                center: [-76.49645, 42.43924],
+                zoom: 18.52,
                 pitch: 60.31,
                 bearing: -45.57
             },
@@ -482,8 +482,8 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacahomelessshelter.jpg?raw=true',
             description: 'The issue of homelessness in Ithaca presents some unique characteristics. Despite being a small rural town, Ithaca hosts a significant number of homeless individuals who live in tents in the forests on the eastern and western outskirts of the city. During the day and evening, they come down to the downtown area, where they often smoke marijuana, beg for money, and occasionally get into altercations with passersby. In the early hours of the morning, they tend to return to the woods. The City of Ithaca government is aware of this issue and is attempting to address it by expanding shelters and welfare facilities to discourage them from coming into the downtown area.',
             location: {
-                center: [-76.49942, 42.43908],
-                zoom: 16.09,
+                center: [-76.45468, 42.43575],
+                zoom: 15.96,
                 pitch: 60.31,
                 bearing: -45.57
             },
@@ -511,8 +511,8 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/mayorithaca.jpg?raw=true',
             description: 'However, Ithacas response to the homelessness issue is facing limitations. Marcos, a student, relayed remarks from the Mayors lecture, where the Mayor explained that the City government wanted to construct essential facilities, like restrooms, as temporary structures in the forests around Ithaca. Unfortunately, due to regulations, even temporary installations in these nature preserves are prohibited, leaving the city with few viable solutions. This highlights the need for Ithaca to develop unique solutions to address its homelessness issue, distinct from approaches taken in other cities.',
             location: {
-                center: [-76.49942, 42.43908],
-                zoom: 16.09,
+                center: [-76.45468, 42.43575],
+                zoom: 15.96,
                 pitch: 60.31,
                 bearing: -45.57
             },
@@ -540,10 +540,10 @@ var config = {
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/IthacaSmokeshop.jpg?raw=true',
             description: 'Marcos also mentioned that a smokeshop in downtown Ithaca is causing significant issues. Since marijuana was legalized in New York State, this smokeshop, located in one of the busiest areas downtown, has become a gathering spot for many homeless individuals. With numerous pedestrians passing by, people often feel threatened walking down this street at night.',
             location: {
-                center: [-76.49942, 42.43908],
-                zoom: 16.09,
-                pitch: 60.31,
-                bearing: -45.57
+                center: [-76.49855, 42.43954],
+                zoom: 19.03,
+                pitch: 39.48,
+                bearing: 130.78
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
@@ -566,7 +566,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Bibliography',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/IthacaSmokeshop.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/bibliography.jpg?raw=true',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,
