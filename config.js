@@ -136,6 +136,7 @@ var config = {
             hidden: false,
             title: 'Chronology of Ithaca Downtown',
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Chronology.jpg?raw=true',
+            description: 'This timeline illustrates the transformation of Ithaca Commons from the 1960s to the 2010s. In the 1960s, downtown Ithaca struggled due to suburban expansion, urban renewal, and the rise of car culture, leaving many historic buildings replaced by vacant lots. In the 1970s, Mayor Ed Conley proposed a pedestrian mall on State Street, inspired by a Cornell planning students suggestion, leading to the construction of the Commons, completed in 1975. The 1980s saw the opening of Center Ithaca, a mixed-use building with retail, office spaces, and apartments. The 1990s brought economic downturns to Ithaca and surrounding areas, resulting in numerous storefront closures, including Rothschilds and CVS. In 2009, Sasaki Associates was commissioned to redesign the Commons, adding features like a central open lane, patterned pavement, improved lighting, and performance spaces. In the 2010s, Ithacas government sought New York State Downtown Revitalization Initiative funding to diversify its downtown economy, and, after several failed attempts, began considering self-sustaining solutions for revitalization.',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,
@@ -206,13 +207,13 @@ var config = {
                 document.getElementById("demographic_legend").style.visibility = "true";
             },
             onChapterEnter: [
-                {layer: 'tompkins', opacity: 1},
-                {layer: 'newyork', opacity: 1},
-                {layer: 'demographic', opacity: 1},
+                {layer: 'tompkins', opacity: 0.3},
+                {layer: 'newyork', opacity: 0.3},
+                {layer: 'demographic', opacity: 0.8},
             ],
             onChapterExit: [
-                {layer: 'tompkins', opacity: 1},
-                {layer: 'newyork', opacity: 1},
+                {layer: 'tompkins', opacity: 0.3},
+                {layer: 'newyork', opacity: 0.3},
                 {layer: 'demographic', opacity: 0},
             ],        
         },
@@ -479,7 +480,7 @@ var config = {
             hidden: false,
             title: 'Public Safety',
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacahomelessshelter.jpg?raw=true',
-            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            description: 'The issue of homelessness in Ithaca presents some unique characteristics. Despite being a small rural town, Ithaca hosts a significant number of homeless individuals who live in tents in the forests on the eastern and western outskirts of the city. During the day and evening, they come down to the downtown area, where they often smoke marijuana, beg for money, and occasionally get into altercations with passersby. In the early hours of the morning, they tend to return to the woods. The City of Ithaca government is aware of this issue and is attempting to address it by expanding shelters and welfare facilities to discourage them from coming into the downtown area.',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,
@@ -508,7 +509,36 @@ var config = {
             hidden: false,
             title: 'Public Safety',
             image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/mayorithaca.jpg?raw=true',
-            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            description: 'However, Ithacas response to the homelessness issue is facing limitations. Marcos, a student, relayed remarks from the Mayors lecture, where the Mayor explained that the City government wanted to construct essential facilities, like restrooms, as temporary structures in the forests around Ithaca. Unfortunately, due to regulations, even temporary installations in these nature preserves are prohibited, leaving the city with few viable solutions. This highlights the need for Ithaca to develop unique solutions to address its homelessness issue, distinct from approaches taken in other cities.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '18th-chapter',
+            alignment: 'left',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/IthacaSmokeshop.jpg?raw=true',
+            description: 'Marcos also mentioned that a smokeshop in downtown Ithaca is causing significant issues. Since marijuana was legalized in New York State, this smokeshop, located in one of the busiest areas downtown, has become a gathering spot for many homeless individuals. With numerous pedestrians passing by, people often feel threatened walking down this street at night.',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,
@@ -535,9 +565,8 @@ var config = {
             id: '18th-chapter',
             alignment: 'center',
             hidden: false,
-            title: 'Public Safety',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/mayorithaca.jpg?raw=true',
-            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            title: 'Bibliography',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/IthacaSmokeshop.jpg?raw=true',
             location: {
                 center: [-76.49942, 42.43908],
                 zoom: 16.09,

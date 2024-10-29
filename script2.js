@@ -72,7 +72,7 @@ map.on('load',function(){
                             30, '#872727',
                             50, '#c76565',
                         ],
-            'fill-opacity': 0.3,
+            'fill-opacity': 0.2,
         }
     });
 
