@@ -212,8 +212,8 @@ var config = {
                 {layer: 'demographic', opacity: 0.8},
             ],
             onChapterExit: [
-                {layer: 'tompkins', opacity: 0.3},
-                {layer: 'newyork', opacity: 0.3},
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
                 {layer: 'demographic', opacity: 0},
             ],        
         },
@@ -505,7 +505,7 @@ var config = {
         },
         {
             id: '16-1th-chapter',
-            alignment: 'center',
+            alignment: 'left',
             hidden: false,
             title: 'Public Safety',
             video: 'images/Homeless_Video.mp4',
