@@ -449,7 +449,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Public Safety',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacacrime.png?raw=true',
             description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
             location: {
                 center: [-76.49942, 42.43908],
@@ -478,7 +478,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Public Safety',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/ithacahomelessshelter.jpg?raw=true',
             description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
             location: {
                 center: [-76.49942, 42.43908],
@@ -504,10 +504,39 @@ var config = {
         },
         {
             id: '17th-chapter',
-            alignment: 'left',
+            alignment: 'center',
             hidden: false,
             title: 'Public Safety',
-            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/Interview2.jpg?raw=true',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/mayorithaca.jpg?raw=true',
+            description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
+            location: {
+                center: [-76.49942, 42.43908],
+                zoom: 16.09,
+                pitch: 60.31,
+                bearing: -45.57
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback:() => {
+                document.getElementById("demographic_legend").style.visibility = "hidden";
+            },
+            onChapterEnter: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},
+                {layer: 'demographic', opacity: 0},
+            ],
+            onChapterExit: [
+                {layer: 'tompkins', opacity: 0},
+                {layer: 'newyork', opacity: 0},   
+                {layer: 'demographic', opacity: 0},    
+            ],     
+        },
+        {
+            id: '18th-chapter',
+            alignment: 'center',
+            hidden: false,
+            title: 'Public Safety',
+            image: 'https://github.com/Synn-Arch/GreyIthaca/blob/main/images/mayorithaca.jpg?raw=true',
             description: 'Downtown Ithaca has recently been grappling with issues related to public safety, including an increase in homelessness and the presence of drug addicts around the Ithaca Commons, posing a threat to local merchants, citizens, tourists, and students. ("Safety a Priority," 2024) The community has attributed these problems to a decrease in police personnel, and this issue has become a topic of concern among local businesses and residents.',
             location: {
                 center: [-76.49942, 42.43908],
